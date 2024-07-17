@@ -148,6 +148,7 @@ main {
     width: 150px !important;
     position: absolute;
     z-index: 0;
+    height: 85%;
 }
 
 .resumo-capitulos {
