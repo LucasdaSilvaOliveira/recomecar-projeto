@@ -27,6 +27,20 @@
     }
 }
 
+@media (max-width: 883px) {
+    .faq-text-content>p {
+        display: none;
+    }
+
+    .faq-text-content>a {
+        display: none;
+    }
+
+    .faq-button-responsive {
+        display: block;
+    }
+}
+
 @media (max-width:830px) {
     .main-brinde h1 {
         font-size: 30px;

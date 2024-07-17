@@ -11,7 +11,7 @@
 
 .active span {
     background-color: #ebcd93 !important;
-    border: 1px solid #824D5D ;
+    border: 1px solid #824D5D;
 }
 
 .header-timer {
@@ -154,10 +154,11 @@ main {
 }
 
 .carousel-item-capitulo img {
-    width: 150px !important;
+    width: 100% !important;
     position: absolute;
     z-index: 0;
-    height: 85%;
+    border-radius: 15px;
+    height: 100%;
 }
 
 .resumo-capitulos {
@@ -356,7 +357,7 @@ main {
 .main-faq {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     gap: 20px;
     padding: 50px 0px;
 }
@@ -447,6 +448,36 @@ main {
 }
 
 .faq-text-content>a:hover {
+    color: rgb(235, 205, 147);
+    background-color: #824D5D;
+}
+
+.faq-button-responsive {
+    display: none;
+}
+
+.faq-button-responsive>p {
+    font-size: 34px;
+    color: #824D5D;
+    text-align: center;
+    font-size: 25px;
+}
+
+.faq-button-responsive>a {
+    text-decoration: none;
+    background-color: rgb(235, 205, 147);
+    color: #824D5D;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-shadow: none;
+    transition: all 100ms ease-in-out;
+    font-size: 16px;
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0px auto;
+}
+
+.faq-button-responsive>a:hover {
     color: rgb(235, 205, 147);
     background-color: #824D5D;
 }
