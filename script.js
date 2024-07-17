@@ -54,3 +54,37 @@ function ToggleDivFAQ(numberDiv) {
         }
     })
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    let countdownTime = 60 * 74; // 1 hora e 14 minutos em segundos
+
+    function startCountdown() {
+        const timerElement = document.getElementById("timer");
+
+        const intervalId = setInterval(() => {
+            const hours = Math.floor(countdownTime / 3600);
+            const minutes = Math.floor((countdownTime % 3600) / 60);
+            const seconds = countdownTime % 60;
+
+            // Formatar horas, minutos e segundos com dois dígitos
+            const formattedHours = String(hours).padStart(2, "0");
+            const formattedMinutes = String(minutes).padStart(2, "0");
+            const formattedSeconds = String(seconds).padStart(2, "0");
+
+            // Atualizar o elemento de exibição do temporizador
+            timerElement.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+
+            // Reduzir o tempo regressivo
+            countdownTime--;
+
+            // Parar o temporizador quando o tempo chegar a zero
+            if (countdownTime < 0) {
+                clearInterval(intervalId);
+                timerElement.textContent = "00:00:00";
+            }
+        }, 1000);
+    }
+
+    // Iniciar o temporizador regressivo ao carregar a página
+    startCountdown();
+});
