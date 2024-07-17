@@ -3,11 +3,13 @@
         padding: 120px 30px 180px 30px;
     }
 }
+
 @media (max-width:1450px) {
     .brinde-capitulos-cards {
         gap: 50px;
     }
 }
+
 @media (max-width: 1200px) {
     .resumo-capitulo-item h3 {
         font-size: 22px;
@@ -17,6 +19,7 @@
         font-size: 20px;
     }
 }
+
 @media (max-width: 1100px) {
     .header-content>div {
         margin: auto;
@@ -32,12 +35,18 @@
     .subtitulo-brinde {
         font-size: 22px;
     }
+
+    .div-animation-hover {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.582);
+    }
 }
 
 @media (max-width:750px) {
     .main-feedback video {
         width: 95%;
     }
+
     .main-feedback h1 {
         font-size: 40px;
     }
@@ -47,6 +56,7 @@
     .header-content>div h1 {
         font-size: 40px;
     }
+
     .header-content>div p {
         font-size: 30px;
     }
@@ -97,9 +107,11 @@
     .main-section-capitulos h1 {
         font-size: 20px;
     }
+
     .main-section-capitulos h1 span {
         padding-left: 20px !important;
     }
+
     .resumo-capitulo-item {
         padding: 0px;
         text-align: center;
@@ -113,6 +125,7 @@
         font-size: 25px;
         text-align: center;
     }
+
     .faq-text-content>a {
         margin: 20px auto 0px auto;
     }
@@ -128,6 +141,7 @@
         text-align: center;
         margin-left: 0px;
     }
+
     .beneficios-content ul li {
         font-size: 16px;
         margin-top: 10px;
@@ -149,3 +163,9 @@
         width: 100%;
     }
 }
+
+/* @media (max-width: 350px) {
+    .brinde-capitulo-card-item {
+        
+    }
+} */
